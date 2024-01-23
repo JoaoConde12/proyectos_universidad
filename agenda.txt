@@ -1,0 +1,2 @@
+ID: 350374, Nombre: Coca Cola, Teléfono: 1234, Email: cocacola@hotmail.com, Ciudad: Guayaquil
+ID: 881112, Nombre: Sprite, Teléfono: 5678, Email: sprite123@gmail.com, Ciudad: Emeraldas
