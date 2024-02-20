@@ -4,7 +4,6 @@
  */
 package agendacontactos;
 
-import java.awt.Frame;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import views.Index;
