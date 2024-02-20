@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 169: end of line expected.
+    hide cientificoIMG:
+                      ^
+
+Ren'Py Version: Ren'Py 7.6.3.23091805
+Fri Feb  2 02:51:08 2024
