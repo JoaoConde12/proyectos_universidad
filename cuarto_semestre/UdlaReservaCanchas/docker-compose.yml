@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  udlaDB:
+    image: postgres:15.3
+    container_name: udla-database
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=joao
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_DB=udla-db
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+  
+  pdAdmin:
+    image: dpage/pgadmin4
+    container_name: pgadminUdla
+    restart: always
+    depends_on:
+      - udlaDB
+    ports:
+      - 8080:80
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=joao@conde.com
+      - PGADMIN_DEFAULT_PASSWORD=1234
+    volumes:
+      - ./pgadmin:/var/lib/pgadmin
+      - ./pgadmin:/certs/server.cert
+      - ./pgadmin:/certs/server.key
+      - ./pgadmin:/pgadmin4/servers.json
